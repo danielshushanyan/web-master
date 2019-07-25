@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ортека</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- build:css -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- endbuild -->
+    </head>
+    <body>
+        <header class="header wrapper">
+            <div class="header__burger">
+                <div class="header__burger-line header__burger--one"></div>
+                <div class="header__burger-line header__burger--two"></div>
+                <div class="header__burger-line header__burger--three"></div>
+            </div>
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__list-item">
+                        <a class="header__link header__link--active" data-anchor="form__section--personal-data" href="/">Личная информация </a>
+                    </li>
+                    <li class="header__list-item">
+                        <a class="header__link" data-anchor="form__section--about" href="/">Опыт</a>
+                    </li>
+                    <li class="header__list-item">
+                        <a class="header__link" data-anchor="form__section--js-lvl" href="/">JavaScript</a>
+                    </li>
+                    <li class="header__list-item">
+                        <a class="header__link" data-anchor="form__section--text-area" href="/">О себе</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="page wrapper">
+            <h1 class="page__title">Анкета</h1>
+            <form class="page__form form">
+
+                <img class="form__section-icon" src="img/icons/personal-data.svg" alt="form icon web masterskaya">
+                <h2 class="form__section-title">Личная информация</h2>
+                <div class="form__section form__section--personal-data">
+                    <input class="form__input" type="text" value="Данил Шушанян Владимирович" placeholder="ФИО">
+                    <input class="form__input form__input--date" value="05/06/1994" type="text" placeholder="Год рождения">
+                    <input class="form__input" type="text" value="Армения г.Ереван" placeholder="Место проживания">
+                    <input class="form__input" type="text" value="danielshushanyan" placeholder="Skype">
+                    <input class="form__input" type="email" value="shushanyandaniel@gmail.com" placeholder="E-mail">
+                </div>
+
+                <img class="form__section-icon" src="img/icons/list.svg" alt="form icon web masterskaya">
+                <h2 class="form__section-title">Расскажите о своем опыте</h2>
+                <div class="form__section form__section--about about-section">
+                    <div class="about-section__col">
+                        <label class="about-section__field" for="bem">
+                            БЭМ/OOCSS
+                            <input class="about-section__checkbox" type="checkbox" id="bem" checked>
+                            <span class="about-section__checkmark"></span>
+                        </label>
+                        <label class="about-section__field" for="processor">
+                            Stylus/LESS/SASS
+                            <input class="about-section__checkbox" type="checkbox" id="processor" checked >
+                            <span class="about-section__checkmark"></span>
+                        </label>
+                        <label class="about-section__field" for="svg">
+                            Работаю с SVG
+                            <input class="about-section__checkbox" type="checkbox" id="svg" checked>
+                            <span class="about-section__checkmark"></span>
+                        </label>
+                    </div>
+
+                    <div class="about-section__col">
+                        <label class="about-section__field" for="semantic">
+                            Верстаю семантично
+                            <input class="about-section__checkbox" type="checkbox" id="semantic" checked>
+                            <span class="about-section__checkmark"></span>
+                        </label>
+                        <label class="about-section__field" for="es6">
+                            ES2015/ES2016
+                            <input class="about-section__checkbox" type="checkbox" id="es6" checked>
+                            <span class="about-section__checkmark"></span>
+                        </label>
+                        <label class="about-section__field" for="gulp">
+                            Gulp/GRUNT
+                            <input class="about-section__checkbox" type="checkbox" id="gulp" checked>
+                            <span class="about-section__checkmark"></span>
+                        </label>
+                    </div>
+
+                    <div class="about-section__col">
+                        <label class="about-section__field" for="webpack">
+                            Webpack
+                            <input class="about-section__checkbox" type="checkbox" id="webpack" checked>
+                            <span class="about-section__checkmark"></span>
+                        </label>
+                        <label class="about-section__field" for="jquery">
+                            jQuery
+                            <input class="about-section__checkbox" type="checkbox" id="jquery" checked>
+                            <span class="about-section__checkmark"></span>
+                        </label>
+                        <label class="about-section__field" for="git">
+                            Ипользую Git
+                            <input class="about-section__checkbox" type="checkbox" id="git" checked>
+                            <span class="about-section__checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <img class="form__section-icon" src="img/icons/js.svg" alt="form icon web masterskaya">
+                <h2 class="form__section-title">Уровень владения JavaScript</h2>
+                <div class="form__section form__section--js-lvl js-lvl">
+                    <div class="js-lvl__slider-container">
+                        <p class="js-lvl__slider-title">Не владею</p>
+                        <p class="js-lvl__slider-title">Использую готовые решения</p>
+                        <p class="js-lvl__slider-title">Использую готовые решения и умею и переделывать</p>
+                        <p class="js-lvl__slider-title">Пишу сложный JS с нуля</p>
+                    </div>
+                    <div class="js-lvl__slider"></div>
+                </div>
+
+                <img class="form__section-icon" src="img/icons/text.svg" alt="form icon web masterskaya">
+                <h2 class="form__section-title">Расскажите о себе</h2>
+                <h3 class="form__text">Напишите несколько предложений, чем привлекла наша вакансия и что вы ожидаете от работы у нас.</h3>
+                <div class="form__section form__section--text-area">
+                    <textarea class="form__text-area" name="about-you" placeholder="Понравилась тем, что...">Ожидаю много интересных задач и опыта</textarea>
+                </div>
+                <button class="form__btn">Готово</button>
+            </form>
+        </main>
+        <!-- build:js -->
+        <script src="js/plugins.js"></script>
+        <script src="js/script.js"></script>
+        <!-- endbuild  -->
+    </body>
+</html>
