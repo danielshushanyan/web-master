@@ -39,67 +39,85 @@
                 <img class="form__section-icon" src="img/icons/personal-data.svg" alt="form icon web masterskaya">
                 <h2 class="form__section-title">Личная информация</h2>
                 <div class="form__section form__section--personal-data">
-                    <input class="form__input" type="text" value="Данил Шушанян Владимирович" placeholder="ФИО">
-                    <input class="form__input form__input--date" value="05/06/1994" type="text" placeholder="Год рождения">
-                    <input class="form__input" type="text" value="Армения г.Ереван" placeholder="Место проживания">
-                    <input class="form__input" type="text" value="danielshushanyan" placeholder="Skype">
-                    <input class="form__input" type="email" value="shushanyandaniel@gmail.com" placeholder="E-mail">
+                    <label class="form-field form-field--filled">
+                        <span class="form-field__label">ФИО</span>
+                        <input class="form-field__input js-field" name="full_name" type="text" value="Данил Шушанян Владимирович">
+                    </label>
+                    <div class="form-select form-select--filled">
+                        <input name="date" hidden class="form-select__input" value="1994">
+                        <div class="form-select__label">Год рождения</div>
+                        <span class="form-select__val">1994</span>
+                        <span class="form-select__chevron"></span>
+                        <ul class="form-select__list"></ul>
+                    </div>
+                    <label class="form-field form-field--filled">
+                        <span class="form-field__label">Место проживания</span>
+                        <input class="form-field__input js-field" name="residence" type="text" value="Армения г.Ереван">
+                    </label>
+                    <label class="form-field form-field--filled">
+                        <span class="form-field__label">Skype</span>
+                        <input class="form-field__input js-field" name="skype" type="text" value="danielshushanyan">
+                    </label>
+                    <label class="form-field form-field--filled">
+                        <span class="form-field__label">E-mail</span>
+                        <input class="form-field__input js-field" name="skype" type="text" value="shushanyandaniel@gmail.com">
+                    </label>
                 </div>
 
                 <img class="form__section-icon" src="img/icons/list.svg" alt="form icon web masterskaya">
                 <h2 class="form__section-title">Расскажите о своем опыте</h2>
                 <div class="form__section form__section--about about-section">
                     <div class="about-section__col">
-                        <label class="about-section__field" for="bem">
+                        <label class="form-checkbox" for="bem">
                             БЭМ/OOCSS
-                            <input class="about-section__checkbox" type="checkbox" id="bem" checked>
-                            <span class="about-section__checkmark"></span>
+                            <input class="form-checkbox__input" type="checkbox" id="bem" checked>
+                            <span class="form-checkbox__checkmark"></span>
                         </label>
-                        <label class="about-section__field" for="processor">
+                        <label class="form-checkbox" for="processor">
                             Stylus/LESS/SASS
-                            <input class="about-section__checkbox" type="checkbox" id="processor" checked >
-                            <span class="about-section__checkmark"></span>
+                            <input class="form-checkbox__input" type="checkbox" id="processor" checked >
+                            <span class="form-checkbox__checkmark"></span>
                         </label>
-                        <label class="about-section__field" for="svg">
+                        <label class="form-checkbox" for="svg">
                             Работаю с SVG
-                            <input class="about-section__checkbox" type="checkbox" id="svg" checked>
-                            <span class="about-section__checkmark"></span>
+                            <input class="form-checkbox__input" type="checkbox" id="svg" checked>
+                            <span class="form-checkbox__checkmark"></span>
                         </label>
                     </div>
 
                     <div class="about-section__col">
-                        <label class="about-section__field" for="semantic">
+                        <label class="form-checkbox" for="semantic">
                             Верстаю семантично
-                            <input class="about-section__checkbox" type="checkbox" id="semantic" checked>
-                            <span class="about-section__checkmark"></span>
+                            <input class="form-checkbox__input" type="checkbox" id="semantic" checked>
+                            <span class="form-checkbox__checkmark"></span>
                         </label>
-                        <label class="about-section__field" for="es6">
+                        <label class="form-checkbox" for="es6">
                             ES2015/ES2016
-                            <input class="about-section__checkbox" type="checkbox" id="es6" checked>
-                            <span class="about-section__checkmark"></span>
+                            <input class="form-checkbox__input" type="checkbox" id="es6" checked>
+                            <span class="form-checkbox__checkmark"></span>
                         </label>
-                        <label class="about-section__field" for="gulp">
+                        <label class="form-checkbox" for="gulp">
                             Gulp/GRUNT
-                            <input class="about-section__checkbox" type="checkbox" id="gulp" checked>
-                            <span class="about-section__checkmark"></span>
+                            <input class="form-checkbox__input" type="checkbox" id="gulp" checked>
+                            <span class="form-checkbox__checkmark"></span>
                         </label>
                     </div>
 
                     <div class="about-section__col">
-                        <label class="about-section__field" for="webpack">
+                        <label class="form-checkbox" for="webpack">
                             Webpack
-                            <input class="about-section__checkbox" type="checkbox" id="webpack" checked>
-                            <span class="about-section__checkmark"></span>
+                            <input class="form-checkbox__input" type="checkbox" id="webpack" checked>
+                            <span class="form-checkbox__checkmark"></span>
                         </label>
-                        <label class="about-section__field" for="jquery">
+                        <label class="form-checkbox" for="jquery">
                             jQuery
-                            <input class="about-section__checkbox" type="checkbox" id="jquery" checked>
-                            <span class="about-section__checkmark"></span>
+                            <input class="form-checkbox__input" type="checkbox" id="jquery" checked>
+                            <span class="form-checkbox__checkmark"></span>
                         </label>
-                        <label class="about-section__field" for="git">
+                        <label class="form-checkbox" for="git">
                             Ипользую Git
-                            <input class="about-section__checkbox" type="checkbox" id="git" checked>
-                            <span class="about-section__checkmark"></span>
+                            <input class="form-checkbox__input" type="checkbox" id="git" checked>
+                            <span class="form-checkbox__checkmark"></span>
                         </label>
                     </div>
                 </div>
@@ -120,7 +138,15 @@
                 <h2 class="form__section-title">Расскажите о себе</h2>
                 <h3 class="form__text">Напишите несколько предложений, чем привлекла наша вакансия и что вы ожидаете от работы у нас.</h3>
                 <div class="form__section form__section--text-area">
-                    <textarea class="form__text-area" name="about-you" placeholder="Понравилась тем, что...">Ожидаю много интересных задач и опыта</textarea>
+                    <textarea class="form__text-area" name="about-you" placeholder="Понравилась тем, что...">В первую очередь меня заинтересовала вакансия тем, что у вас можно расти и Вы работаете с крупными брендами.
+Работая в Веб-мастерской Я ожидаю карьерный рост, так же готов учить новичков и учиться у более опытных коллег.
+О себе лучше раскажут мои работы.
+mb.nikoland.ru
+vodka-a.ru
+shopological.com
+show.mvideo.ru
+cityzen.am/ru
+samsung-forward.ru</textarea>
                 </div>
                 <button class="form__btn">Готово</button>
             </form>
